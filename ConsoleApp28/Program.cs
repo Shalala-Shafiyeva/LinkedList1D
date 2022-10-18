@@ -16,6 +16,11 @@
             linkedlist.AddToEnd(d);
 
             linkedlist.Output();
+
+            Node<int> MaxEl = linkedlist.FindMaxNode();
+            Console.WriteLine(MaxEl.Data);
+
+
             Console.ReadKey();
 
 
