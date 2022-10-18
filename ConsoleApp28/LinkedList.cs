@@ -26,11 +26,15 @@ namespace ConsoleApp28
                 if (Head == null)
                 {
                     Head = newNode;
-                    Tail= newNode;
+                    Tail = newNode;
                 }
-                Tail.Next = newNode;
-                Tail = newNode; ;
-                Count++;
+                else
+                {
+                    Tail.Next = newNode;
+                    Tail = newNode;
+                }
+                    Count++;
+                
             }
             
             public void Output()
@@ -53,6 +57,20 @@ namespace ConsoleApp28
                     runner=runner.Next;
                 }
                 return MaxNode;
+            }
+            public void AddNodeToBeginning(Node<T> newNode)
+            {
+             if (Head == null)
+                {
+                    Head = newNode;
+                    Tail = newNode;
+                }
+             else
+                {
+                    newNode.Next = Head;
+                    Head = newNode;
+                }
+                Count++;
             }
         }
     }

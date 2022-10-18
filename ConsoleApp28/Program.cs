@@ -14,6 +14,10 @@
             linkedlist.AddToEnd(c);
             Node<int> d = new Node<int>(7);
             linkedlist.AddToEnd(d);
+            Node<int> e = new Node<int>(2);
+            linkedlist.AddToEnd(e);
+            Node<int> f = new Node<int>(-6);
+            linkedlist.AddToEnd(f);
 
             linkedlist.Output();
 
